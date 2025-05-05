@@ -18,4 +18,9 @@ public class Friend {
         return "Привет!";
     }
 
+    public String respondToFarewell() {
+        //todo добавить полноценную реализацию respondToFarewell
+        return "Пока!";
+    }
+
 }
