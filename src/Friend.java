@@ -8,10 +8,16 @@ public class Friend {
             "Приветствую! Готов к общению!"
     };
 
-    private static final String[] FAREWELLS = {
+    private String[] FAREWELLS = {
             "Пока! Было приятно пообщаться!",
             "До встречи! Заходи ещё.",
             "Удачи! Возвращайся скорее."
+    };
+
+    private String[] ANSWERS_ABOUT_WEATHER = {
+            "Сегодня отличный день! Солнце светит ярко.",
+            "На улице дождь. Возьми зонтик!",
+            "Погода странная... Лучше останься дома."
     };
 
     Random random = new Random();
@@ -33,8 +39,7 @@ public class Friend {
     }
 
     public String respondToWeather() {
-        //todo добавить полноценную реализацию respondToWeather
-        return "день";
+        return getRandomResponse(ANSWERS_ABOUT_WEATHER);
     }
 
     public String respondToSport() {
