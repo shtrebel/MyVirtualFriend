@@ -25,5 +25,11 @@ public class TestFriend {
         assertTrue(response.contains("Привет") || response.contains("Здравствуй") || response.contains("Приветствую"));
     }
 
+    @Test
+    public void respondToFarewellTest() {
+        String response = friend.respondToFarewell();
+        assertTrue(response.contains("Пока") || response.contains("До встречи") || response.contains("Удачи"));
+    }
+
 
 }
