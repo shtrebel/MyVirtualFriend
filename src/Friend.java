@@ -20,6 +20,12 @@ public class Friend {
             "Погода странная... Лучше останься дома."
     };
 
+    private String[] ANSWERS_ABOUT_SPORT = {
+            "Футбол — это круто! А ты за какую команду болеешь?",
+            "Люблю баскетбол. Майкл Джордан — легенда!",
+            "Спорт — это здоровье. Ты сегодня тренировался?"
+    };
+
     Random random = new Random();
 
     public Friend(){
@@ -43,8 +49,7 @@ public class Friend {
     }
 
     public String respondToSport() {
-        //todo добавить полноценную реализацию respondToSport
-        return "спорт";
+        return getRandomResponse(ANSWERS_ABOUT_SPORT);
     }
 
 }

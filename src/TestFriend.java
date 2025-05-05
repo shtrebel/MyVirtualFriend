@@ -34,13 +34,13 @@ public class TestFriend {
     @Test
     public void respondToWeatherTest() {
         String response = friend.respondToWeather();
-        assertTrue(response.contains("день") || response.contains("дождь") || response.contains("погода"));
+        assertTrue(response.contains("день") || response.contains("дождь") || response.contains("Погода"));
     }
 
     @Test
     public void respondToSportTest() {
         String response = friend.respondToSport();
-        assertTrue(response.contains("футбол") || response.contains("баскетбол") || response.contains("спорт"));
+        assertTrue(response.contains("Футбол") || response.contains("баскетбол") || response.contains("Спорт"));
     }
 
 
