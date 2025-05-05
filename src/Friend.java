@@ -23,4 +23,9 @@ public class Friend {
         return "Пока!";
     }
 
+    public String respondToWeather() {
+        //todo добавить полноценную реализацию respondToWeather
+        return "день";
+    }
+
 }
