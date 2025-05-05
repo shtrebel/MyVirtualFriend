@@ -31,5 +31,11 @@ public class TestFriend {
         assertTrue(response.contains("Пока") || response.contains("До встречи") || response.contains("Удачи"));
     }
 
+    @Test
+    public void respondToWeatherTest() {
+        String response = friend.respondToWeather();
+        assertTrue(response.contains("день") || response.contains("дождь") || response.contains("погода"));
+    }
+
 
 }
