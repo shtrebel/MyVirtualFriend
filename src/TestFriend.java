@@ -19,5 +19,11 @@ public class TestFriend {
         assertTrue(result.equals("A") || result.equals("B") || result.equals("C"));
     }
 
+    @Test
+    public void respondToGreetingTest() {
+        String response = friend.respondToGreeting();
+        assertTrue(response.contains("Привет") || response.contains("Здравствуй") || response.contains("Приветствую"));
+    }
+
 
 }
