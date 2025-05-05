@@ -2,6 +2,12 @@ import java.util.Random;
 
 public class Friend {
 
+    private String[] GREETINGS = {
+            "Привет! Как твои дела?",
+            "Здравствуй! О чём поговорим?",
+            "Приветствую! Готов к общению!"
+    };
+
     Random random = new Random();
 
     public Friend(){
@@ -13,8 +19,7 @@ public class Friend {
     }
 
     public String respondToGreeting() {
-        //todo добавить полноценную реализацию respondToGreeting
-        return "Привет!";
+        return getRandomResponse(GREETINGS);
     }
 
     public String respondToFarewell() {
