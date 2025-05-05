@@ -8,6 +8,12 @@ public class Friend {
             "Приветствую! Готов к общению!"
     };
 
+    private static final String[] FAREWELLS = {
+            "Пока! Было приятно пообщаться!",
+            "До встречи! Заходи ещё.",
+            "Удачи! Возвращайся скорее."
+    };
+
     Random random = new Random();
 
     public Friend(){
@@ -23,8 +29,7 @@ public class Friend {
     }
 
     public String respondToFarewell() {
-        //todo добавить полноценную реализацию respondToFarewell
-        return "Пока!";
+        return getRandomResponse(FAREWELLS);
     }
 
     public String respondToWeather() {
