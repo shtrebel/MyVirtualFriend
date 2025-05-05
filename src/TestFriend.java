@@ -37,5 +37,12 @@ public class TestFriend {
         assertTrue(response.contains("день") || response.contains("дождь") || response.contains("погода"));
     }
 
+    @Test
+    public void respondToSportTest() {
+        String response = friend.respondToSport();
+        assertTrue(response.contains("Футбол") || response.contains("баскетбол") || response.contains("Спорт"));
+    }
+
+
 
 }
