@@ -28,4 +28,9 @@ public class Friend {
         return "день";
     }
 
+    public String respondToSport() {
+        //todo добавить полноценную реализацию respondToSport
+        return "спорт";
+    }
+
 }

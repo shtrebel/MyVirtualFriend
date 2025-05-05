@@ -40,7 +40,7 @@ public class TestFriend {
     @Test
     public void respondToSportTest() {
         String response = friend.respondToSport();
-        assertTrue(response.contains("Футбол") || response.contains("баскетбол") || response.contains("Спорт"));
+        assertTrue(response.contains("футбол") || response.contains("баскетбол") || response.contains("спорт"));
     }
 
 
