@@ -12,4 +12,10 @@ public class Friend {
         //todo добавить полноценную реализацию getRandomResponse
         return "A";
     }
+
+    public String respondToGreeting() {
+        //todo добавить полноценную реализацию respondToGreeting
+        return "Привет!";
+    }
+
 }
