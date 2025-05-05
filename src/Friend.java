@@ -9,8 +9,7 @@ public class Friend {
     }
 
     public String getRandomResponse(String[] responses) {
-        //todo добавить полноценную реализацию getRandomResponse
-        return "A";
+        return responses[random.nextInt(responses.length)];
     }
 
     public String respondToGreeting() {
